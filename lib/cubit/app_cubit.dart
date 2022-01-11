@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:cubit_state_management/model/data_model.dart';
+import 'package:cubit_state_management/pages/detail_page.dart';
 import 'package:cubit_state_management/services/data_services.dart';
 import 'package:equatable/equatable.dart';
 
@@ -18,5 +19,13 @@ class AppCubit extends Cubit<AppState> {
       places = await data.getInfo();
       emit(LoadedState(places));
     } catch (e) {}
+  }
+
+  DetailPage(DataModel data) {
+    emit(DetailState(data));
+  }
+
+  goHome() {
+    emit(LoadedState(places));
   }
 }

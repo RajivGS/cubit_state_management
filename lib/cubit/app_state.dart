@@ -19,3 +19,10 @@ class LoadedState extends AppState {
   @override
   List<Object> get props => [places];
 }
+
+class DetailState extends AppState {
+  DetailState(this.place);
+  final DataModel place;
+  @override
+  List<Object> get props => [place];
+}
