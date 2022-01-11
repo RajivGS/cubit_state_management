@@ -1,9 +1,13 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:cubit_state_management/cubit/app_cubit.dart';
+import 'package:cubit_state_management/cubit/app_cubit_logic.dart';
 import 'package:cubit_state_management/pages/detail_page.dart';
 import 'package:cubit_state_management/pages/navbar_pages/main_page.dart';
 import 'package:cubit_state_management/pages/welcome_page.dart';
+import 'package:cubit_state_management/services/data_services.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +24,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: DetailPage(),
+      home: BlocProvider<AppCubit>(
+        create: (context) => AppCubit(data: DataServices()),
+        child: AppCubitLogic(),
+      ),
     );
   }
 }

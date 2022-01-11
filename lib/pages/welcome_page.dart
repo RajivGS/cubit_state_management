@@ -3,11 +3,13 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:cubit_state_management/core/assets_constant.dart';
+import 'package:cubit_state_management/cubit/app_cubit.dart';
 import 'package:cubit_state_management/misc/colors.dart';
 import 'package:cubit_state_management/widget/app_large_text.dart';
 import 'package:cubit_state_management/widget/app_text.dart';
 import 'package:cubit_state_management/widget/responsivebutton.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({
@@ -56,8 +58,20 @@ class _WelcomePageState extends State<WelcomePage> {
                         ),
                       ),
                       SizedBox(height: 40),
-                      ResponsiveButton(
-                        width: 120,
+                      GestureDetector(
+                        onTap: () {
+                          BlocProvider.of<AppCubit>(context).getData();
+                        },
+                        child: Container(
+                          width: 200,
+                          child: Row(
+                            children: [
+                              ResponsiveButton(
+                                width: 120,
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ],
                   ),
