@@ -1,4 +1,5 @@
-import 'package:cubit_state_management/core/assets_constant.dart';
+// ignore_for_file: sized_box_for_whitespace
+
 import 'package:cubit_state_management/cubit/app_cubit.dart';
 import 'package:cubit_state_management/misc/colors.dart';
 import 'package:cubit_state_management/widget/app_button.dart';

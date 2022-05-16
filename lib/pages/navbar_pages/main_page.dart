@@ -33,8 +33,7 @@ class _MainPageState extends State<MainPage> {
       backgroundColor: Colors.white,
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.white,
+        type: BottomNavigationBarType.fixed, backgroundColor: Colors.white,
         onTap: onTap,
         currentIndex: currentIndex,
         unselectedFontSize: 0.0,
@@ -44,13 +43,13 @@ class _MainPageState extends State<MainPage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         elevation: 0.0,
+        // ignore: prefer_const_literals_to_create_immutables
         items: [
-          BottomNavigationBarItem(title: Text("Home"), icon: Icon(Icons.apps)),
+          BottomNavigationBarItem(label: "Home", icon: Icon(Icons.apps)),
           BottomNavigationBarItem(
-              title: Text("Bar"), icon: Icon(Icons.bar_chart_sharp)),
-          BottomNavigationBarItem(
-              title: Text("Search"), icon: Icon(Icons.search)),
-          BottomNavigationBarItem(title: Text("My"), icon: Icon(Icons.person)),
+              label: "Bar", icon: Icon(Icons.bar_chart_sharp)),
+          BottomNavigationBarItem(label: "Search", icon: Icon(Icons.search)),
+          BottomNavigationBarItem(label: "My", icon: Icon(Icons.person)),
         ],
       ),
     );

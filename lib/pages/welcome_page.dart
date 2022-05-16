@@ -1,6 +1,6 @@
 //Custom Carousel Slider Page
 
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:cubit_state_management/core/assets_constant.dart';
 import 'package:cubit_state_management/cubit/app_cubit.dart';

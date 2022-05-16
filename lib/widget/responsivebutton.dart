@@ -3,7 +3,6 @@
 import 'package:cubit_state_management/core/assets_constant.dart';
 import 'package:cubit_state_management/misc/colors.dart';
 import 'package:cubit_state_management/widget/app_text.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ResponsiveButton extends StatelessWidget {

@@ -2,9 +2,6 @@
 
 import 'package:cubit_state_management/cubit/app_cubit.dart';
 import 'package:cubit_state_management/cubit/app_cubit_logic.dart';
-import 'package:cubit_state_management/pages/detail_page.dart';
-import 'package:cubit_state_management/pages/navbar_pages/main_page.dart';
-import 'package:cubit_state_management/pages/welcome_page.dart';
 import 'package:cubit_state_management/services/data_services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

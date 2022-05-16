@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors_in_immutables
+
 part of 'app_cubit.dart';
 
 abstract class AppState extends Equatable {
